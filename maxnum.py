@@ -1,16 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jul 18 21:44:16 2019
+Created on Fri Jul 19 04:36:32 2019
 
-@author: swapn
+@author: aot
 """
 
-a=int(input("Enter the number 1: "))
-b=int(input("Enter the number 2: "))
-c=int(input("Enter the number 3: "))
-if(a>b)and(a>c):
-    print("The first number {} is largest of all".format(a))
-elif(b>a)and(b>c):
-    print("The second number {} is largest of all".format(b))
-else:
-    print("The third number {} is largest of all".format(c))
+a,b={int(i) for i in input("Enter two number :").split()}
+max=a if (a>b) else b
+print("Max Number among two is {}".format(max))
